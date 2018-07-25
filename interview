@@ -44,3 +44,361 @@ Akshay joshi (M) +91 9664365280
 
 
 
+What is Bootstrap?
+•	Bootstrap is a free front-end framework for faster and easier web development
+•	Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+•	Bootstrap also gives you the ability to easily create responsive designs
+What is Responsive Web Design?
+
+Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+Why Use Bootstrap?
+Advantages of Bootstrap:
+•	Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+•	Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+•	Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework
+•	Browser compatibility: Bootstrap 4 is compatible with all modern browsers (Chrome, Firefox, Internet Explorer 10+, Edge, Safari, and Opera)
+One advantage of using the Bootstrap 4 CDN:
+Many users already have downloaded Bootstrap 4 from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.
+
+jQuery and Popper?
+Bootstrap 4 use jQuery and Popper.js for JavaScript components (like modals, tooltips, popovers etc). However, if you just use the CSS part of Bootstrap, you don't need them.
+<meta name="viewport" content="width=device-width, initial-scale=1">
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+Grid Classes
+The Bootstrap 4 grid system has five classes:
+•	.col- (extra small devices - screen width less than 576px)
+•	.col-sm- (small devices - screen width equal to or greater than 576px)
+•	.col-md- (medium devices - screen width equal to or greater than 768px)
+•	.col-lg- (large devices - screen width equal to or greater than 992px)
+•	.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+The classes above can be combined to create more dynamic and flexible layouts.
+Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+Bootstrap 4 Default Settings
+Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5.
+The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.
+In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+Display Headings
+Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight), and there are four classes to choose from: .display-1, .display-2, .display-3, .display-4
+Text Colors
+Bootstrap 4 has some contextual classes that can be used to provide "meaning through colors".
+The classes for text colors are: .text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary, .text-white,.text-dark, .text-body (default body color/often black) and .text-light:
+Background Colors
+The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+Note that background colors do not set the text color, so in some cases you'll want to use them together with a .text-* class.
+Bootstrap 4 Basic Table
+A basic Bootstrap 4 table has a light padding and horizontal dividers.
+The .table class adds basic styling to a table:
+Striped Rows
+The .table-striped class adds zebra-stripes to a table:
+Bordered Table
+The .table-bordered class adds borders on all sides of the table and cells:
+Hover Rows
+The .table-hover class adds a hover effect (grey background color) on table rows:
+Black/Dark Table
+The .table-dark class adds a black background to the table:
+Dark Striped Table
+Combine .table-dark and .table-striped to create a dark, striped table:
+Hoverable Dark Table
+The .table-hover class adds a hover effect (grey background color) on table rows:
+Borderless Table
+The .table-borderless class removes borders from the table:
+The contextual classes that can be used are:
+Class	Description
+.table-primary	Blue: Indicates an important action
+.table-success	Green: Indicates a successful or positive action
+.table-danger	Red: Indicates a dangerous or potentially negative action
+.table-info	Light blue: Indicates a neutral informative change or action
+.table-warning	Orange: Indicates a warning that might need attention
+.table-active	Grey: Applies the hover color to the table row or table cell
+.table-secondary	Grey: Indicates a slightly less important action
+.table-light	Light grey table or table row background
+.table-dark	Dark grey table or table row background
+The .thead-dark class adds a black background to table headers, and the .thead-light class adds a grey background to table headers:
+Small table
+The .table-sm class makes the table smaller by cutting cell padding in half:
+Responsive Tables
+The .table-responsive class creates a responsive table: an horizontal scrollbar is added to the table on screens that are less than 992px wide (if needed). When viewing on anything larger than 992px wide, there is no difference:
+ou can also decide when the table should get a scrollbar, depending on screen width:
+Class	Screen width
+.table-responsive-sm	< 576px
+.table-responsive-md	< 768px
+.table-responsive-lg	< 992px
+.table-responsive-xl	< 1200px
+Bootstrap 4 Images
+<img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre">
+<img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">
+<img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre">
+Aligning Images
+Float an image to the right with the .float-right class or to the left with .float-left:
+Centered Image
+Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:
+<img src="paris.jpg" class="mx-auto d-block">
+
+Responsive Images
+Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.
+Create responsive images by adding an .img-fluid class to the <img> tag. The image will then scale nicely to the parent element.
+The .img-fluid class applies max-width: 100%; and height: auto; to the image:
+<img class="img-fluid" src="img_chania.jpg" alt="Chania">
+Bootstrap 4 Jumbotron
+A jumbotron indicates a big grey box for calling extra attention to some special content or information.
+Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+Full-width Jumbotron
+If you want a full-width jumbotron without rounded borders, add the .jumbotron-fluid class and a .container or .container-fluid inside of it:
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Bootstrap Tutorial</h1> 
+    <p>Bootstrap is the most popular HTML, CSS...</p> 
+  </div>
+</div>
+Bootstrap 4 Alerts
+Alerts are created with the .alert class, followed by one of the contextual classes .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark:
+Alert Links
+Add the alert-link class to any links inside the alert box to create "matching colored links":
+<div class="alert alert-success">
+  <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+</div>
+Closing Alerts
+×Click on the "x" symbol to the right to close me.
+To close the alert message, add a .alert-dismissible class to the alert container. Then add class="close" and data-dismiss="alert" to a link or a button element (when you click on this the alert box will disappear).
+<div class="alert alert-success alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+Animated Alerts
+×Click on the "x" symbol to the right to close me. I will "fade" out.
+The .fade and .show classes adds a fading effect when closing the alert message:
+<div class="alert alert-danger alert-dismissible fade show">
+Bootstrap 4 Buttons
+Button Styles
+Basic Primary Secondary Success Info Warning Danger Dark Light 
+Why do we put a # in the href attribute of the link?
+
+Since we do not have any page to link it to, and we do not want to get a "404" message, we put # as the link. In real life it should of course been a real URL to the "Search" page.
+Button Outline
+Bootstrap 4 provides eight outline/bordered buttons:
+Primary Secondary Success Info Warning Danger Dark 
+Button Sizes
+ btn-lg   btn-md  btn-sm
+Block Level Buttons
+Add class .btn-block to create a block level button that spans the entire width of the parent element.
+Button Groups
+Use a <div> element with class .btn-group to create a button group:
+Instead of applying button sizes to every button in a group, use class .btn-group-lg for a large button group or the .btn-group-sm for a small button group:
+Use the class .btn-group-vertical to create a vertical button group:
+Bootstrap 4 Badges
+Badges are used to add additional information to any content. Use the .badge class together with a contextual class (like .badge-secondary) within <span> elements to create rectangular badges. Note that badges scale to match the size of the parent element (if any):
+ontextual Badges
+Primary Secondary Success Danger Warning Info Light Dark
+Pill Badges
+Primary Secondary Success Danger Warning Info Light Dark
+Use the .badge-pill class to make the badges more round:
+Basic Progress Bar
+To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:
+<div class="progress">
+  <div class="progress-bar" style="width:70%"></div>
+</div>
+The height of the progress bar is 16px by default. Use the CSS height property to change it. Note that you must set the same height for the progress container and the progress bar:
+<div class="progress" style="height:20px">
+  <div class="progress-bar" style="width:40%;height:20px"></div>
+</div>
+By default, the progress bar is blue (primary). Use any of the Bootstrap 4 contextual background classes to its color: Eg:bg-success. 
+Use the .progress-bar-striped class to add stripes to the progress bars:
+Add the .progress-bar-animated class to animate the progress bar:
+Basic Pagination
+To create a basic pagination, add the .pagination class to an <ul> element. Then add the .page-item to each <li> element and a .page-link class to each link inside <li>:
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+The .active class is used to "highlight" the current page:
+The .disabled class is used for links that appear un-clickable:
+Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks:
+Pagination Alignment
+Use utilitiy classes to change the alignment of the pagination: pagination justify-content-center, pagination justify-content-end
+Breadcrumbs
+Another form for pagination, is breadcrumbs:
+The .breadcrumb and .breadcrumb-item classes indicates the current page's location within a navigational hierarchy:
+<ul class="breadcrumb">
+  <li class="breadcrumb-item"><a href="#">Photos</a></li>
+  <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+  <li class="breadcrumb-item"><a href="#">Italy</a></li>
+  <li class="breadcrumb-item active">Rome</li>
+</ul>
+Bootstrap 4 List Groups
+To create a basic list group, use an <ul> element with class .list-group, and <li> elements with class .list-group-item:
+<ul class="list-group">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ul>
+Use the .active class to highlight the current item:
+To create a list group with linked items, use <div> instead of <ul> and <a> instead of <li>. Optionally, add the .list-group-item-action class if you want a grey background color on hover:
+The .disabled class adds a lighter text color to the disabled item. And when used on links, it will remove the hover effect:
+Use the .list-group-flush class to remove some borders and rounded corners:
+he classes for coloring list-items are: .list-group-item-success, list-group-item-secondary, list-group-item-info, list-group-item-warning, .list-group-item-danger, list-group-item-dark and list-group-item-light,:
+Bootstrap 4 Dropdowns
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Link 1</a>
+    <a class="dropdown-item" href="#">Link 2</a>
+    <a class="dropdown-item" href="#">Link 3</a>
+  </div>
+</div>
+Example Explained
+The .dropdown class indicates a dropdown menu.
+To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and the data-toggle="dropdown" attribute.
+Add the .dropdown-menu class to a <div> element to actually build the dropdown menu. Then add the .dropdown-item class to each element (links or buttons) inside the dropdown menu.
+The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border:
+The .dropdown-header class is used to add headers inside the dropdown menu:
+Disable and Active items
+Highlight a specific dropdown item with the .active class (adds a blue background color).
+To disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a "no-parking-sign" icon on hover):
+Cards
+A card in Bootstrap 4 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.
+If you are familiar with Bootstrap 3, cards replace old panels, wells, and thumbnails.
+The .card-header class adds a heading to the card and the .card-footer class adds a footer to the card:
+Contextual Cards
+To add a background color the card, use contextual classes (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+Use .card-title to add card titles to any heading element. The .card-text class is used to remove bottom margins for a <p> element if it is the last child (or the only one) inside .card-body. The .card-link class adds a blue color to any link, and a hover effect.
+Add .card-img-top or .card-img-bottom to an <img> to place the image at the top or at the bottom inside the card. Note that we have added the image outside of the .card-body to span the entire width:
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+Turn an image into a card background and use .card-img-overlay to add text on top of the image:
+<div class="card" style="width:500px">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+  <div class="card-img-overlay">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+Card Columns
+The .card-columns class creates a masonry-like grid of cards (like pinterest). The layout will automatically adjust as you insert more cards.
+Note: The cards are displayed vertically on small screens (less than 576px):
+Card Deck
+The .card-deck class creates a grid of cards that are of equal height and width. The layout will automatically adjust as you insert more cards.
+Note: The cards are displayed vertically on small screens (less than 576px):
+Card Group
+The .card-group class is similar to .card-deck. The only difference is that the .card-group class removes left and right margins between each card.
+Note: The cards are displayed vertically on small screens (less than 576px), WITH top and bottom margin:
+
+Bootstrap 4 Collapse
+Collapsibles are useful when you want to hide and show large amount of content:
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
+The .collapse class indicates a collapsible element (a <div> in our example); this is the content that will be shown or hidden with a click of a button.
+To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-target="#id"attribute to connect the button with the collapsible content (<div id="demo">).
+Note: For <a> elements, you can use the href attribute instead of the data-target attribute:
+By default, the collapsible content is hidden. However, you can add the .show class to show the content by default:
+
+Accordion
+Note: Use the data-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+<div id="accordion">
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        Collapsible Group Item #1
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+***card2***
+***card3***
+</div>
+Bootstrap 4 Navs
+Nav Menus
+If you want to create a simple horizontal menu, add the .nav class to a <ul> element, followed by .nav-item for each <li> and add the .nav-link class to their links:
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+</ul>
+Add the .justify-content-center class to center the nav, and the .justify-content-end class to right-align the nav.
+Add the .flex-column class to create a vertical nav after nav class
+Tabs
+Turn the nav menu into navigation tabs with the .nav-tabs class. Add the active class to the active/current link. If you want the tabs to be togglable, see the last example on this page.
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+Pills
+Turn the nav menu into navigation pills with the .nav-pills class. If you want the pills to be togglable, see the last example on this page.
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+Justified Tabs/pills
+Justify the tabs/pills with the .nav-justified class (equal width):
+Toggleable / Dynamic Tabs
+To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a<div> element with class .tab-content.
+If you want the tabs to fade in and out when clicking on them, add the .fade class to .tab-pane:
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">...</div>
+  <div class="tab-pane container fade" id="menu1">...</div>
+  <div class="tab-pane container fade" id="menu2">...</div>
+</div>
+
+
+
+
+
+
+
+
